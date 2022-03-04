@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #eeeae1;
     font-family: 'Inter', sans-serif;
 }
@@ -7,26 +7,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid red;
     flex-direction: column;
     width: 300px;
-    border-radius: 5%;
-    box-shadow: 0px 0px 25px 10px rgba(0,0,0,.25);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, .25);
     margin: 0 auto;
     margin-top: 4rem;
+    background: white;
 }
 
-.header{
+.header {
     background-color: #a35252;
+    /*background: url("/assets/images/bg-image.jpg");*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
-    border-radius: 5%;
-    border: solid blue;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     justify-content: center;
     align-content: center;
     width: 100%;
 }
 
-.header, h1 {
+.header,
+h1 {
     font-weight: 200;
     font-size: 2.5rem;
 }
@@ -38,21 +43,39 @@ body{
 }
 
 .todo-input {
-    background-color: #d0ab69;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-content: center;
     border: solid pink;
-    width: 100%;
-    margin: 10px;
-}
-
-.fa-circle-plus{
-    font-size: 1.5rem;
+    width: 300px;
 }
 
 input {
-    width: 75%;
-    padding: .5rem;
+    width: 256px;
+    height: 40px;
     border: 0;
+    padding-left: 10px;
+}
+
+.add-task {
+    font-size: 40px;
+    padding-right: 4px;
+    color: #272721;
+    cursor: pointer;
+    
+}
+
+.add-task:hover {
+    color: whitesmoke;
+}
+
+ul {
+    padding: 0
+}
+
+.task {
+    list-style: none;
+    padding: 0;
+    margin: 0
 }
