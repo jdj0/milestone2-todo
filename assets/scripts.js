@@ -1,4 +1,5 @@
 //Targeted elements
+const header = document.querySelector(".header")
 const list = document.querySelector(".todo-list");
 const addTaskBtn = document.querySelector(".add-task");
 const taskInput = document.querySelector(".task-input")
@@ -7,17 +8,34 @@ const taskInput = document.querySelector(".task-input")
 addTaskBtn.addEventListener("click", addTask);
 
 //Functions
+function addTask() {
 
-function addTask(){
-    let setTask = document.createElement("li");
-    setTask.innerHTML = taskInput.value;
-    list.append(setTask);
+  list.innerHTML += `
+    <div class="list-task">
+      <p class="task"><i class="fa-solid fa-square-check"></i>${taskInput.value}
+      <i class="fa-solid fa-trash-can"></i>
+      </p>
+    </div>
+    `;
+
+  taskInput.value = "";
 };
 
-function remove(){
+function remove() {
 
-}
-
-function tick(){
-    
 };
+
+function complete() {
+
+};
+
+//Code taken from stackoverflow. Noted in Read Me.
+/*var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0');
+var yyyy = today.getFullYear();
+
+today = dd + '.' + mm + '.' + yyyy;
+
+header.append(today);
+*/

@@ -32,14 +32,14 @@ body {
 
 .header,
 h1 {
-    font-weight: 200;
+    font-weight: 100;
     font-size: 2.5rem;
 }
 
 .todo-list {
-    border: solid green;
     width: 100%;
     height: 400px;
+    background-color: #d0ab69;
 }
 
 .todo-input {
@@ -47,7 +47,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-content: center;
-    border: solid pink;
     width: 300px;
 }
 
@@ -56,6 +55,7 @@ input {
     height: 40px;
     border: 0;
     padding-left: 10px;
+    font-size: 18px;
 }
 
 .add-task {
@@ -63,7 +63,8 @@ input {
     padding-right: 4px;
     color: #272721;
     cursor: pointer;
-    
+    transition-property: color;
+    transition-duration: .2s;
 }
 
 .add-task:hover {
@@ -77,5 +78,21 @@ ul {
 .task {
     list-style: none;
     padding: 0;
-    margin: 0
+    margin: 0;
+    font-size: 18px;
+}
+
+.list-task{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.fa-square-check{
+    padding: 10px;
+}
+
+.fa-trash-can {
+    padding: 10px;
+    padding-right: 15px;
+    float: right;
 }
