@@ -42,8 +42,6 @@ function addTask() {
 //Deletes task
 function removeTask() {
 
-  const listTask = document.getElementsByClassName("list-task");
-
   this.parentElement.remove();
 
   console.log("test-remove-todo");
@@ -52,13 +50,14 @@ function removeTask() {
 
 function complete() {
 
-  console.log("test-complete");
 
-  this.remove()
+  this.parentElement.classList.toggle("complete");
+
+  console.log("test-complete");
 
 };
 
-/*
+
 //Code from stackoverflow. Noted in Read Me.
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -67,5 +66,4 @@ var yyyy = today.getFullYear();
 
 today = dd + '.' + mm + '.' + yyyy;
 
-todayDate.innerHTML(today);
-*/
+todayDate.innerHTML = today;
