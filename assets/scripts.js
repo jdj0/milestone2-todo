@@ -14,7 +14,11 @@ addTaskBtn.addEventListener("click", addTask);
 //Takes input value and places it in the list with complete and remove buttons
 function addTask() {
 
-  console.log("test-add-task");
+  //Alerts the user if the task input is empty
+  if (taskInput.value == "") {
+    alert("The task input is empty")
+    return
+  }
 
   list.innerHTML += `
     <div class="list-task">
@@ -24,37 +28,30 @@ function addTask() {
       </p>
     </div>
     `;
-//Add Event listener to trash buttons
-    for (var i = 0; i < removeBtn.length; i++){
-      removeBtn[i].addEventListener("click", removeTask);
-    };
 
-//Add Event listener to complete buttons
-    for (var i = 0; i < completeBtn.length; i++){
+  //Add Event listener to trash buttons
+  for (var i = 0; i < removeBtn.length; i++) {
+    removeBtn[i].addEventListener("click", removeTask);
+  };
+
+  //Add Event listener to complete buttons
+  for (var i = 0; i < completeBtn.length; i++) {
     completeBtn[i].addEventListener("click", complete);
-    };
+  };
 
-//Clear input ready for new task 
+  //Clear input ready for new task 
   taskInput.value = "";
 };
 
 
 //Deletes task
 function removeTask() {
-
   this.parentElement.remove();
-
-  console.log("test-remove-todo");
-
 };
 
+//Toggles cross through text decoration
 function complete() {
-
-
   this.parentElement.classList.toggle("complete");
-
-  console.log("test-complete");
-
 };
 
 
