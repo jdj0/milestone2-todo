@@ -1,5 +1,5 @@
 body {
-    background-color: #eeeae1;
+    background: #2b2929;
     font-family: 'Inter', sans-serif;
 }
 
@@ -8,44 +8,51 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, .25);
     margin: 0 auto;
     margin-top: 4rem;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
 .header {
-    background-color: #a35252;
+    background-color: #fbff00;
     /*background: url("/assets/images/bg-image.jpg");*/
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    display: flex;
+    /*display: flex;
+    justify-content: center;
+    align-content: center;*/
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    justify-content: center;
-    align-content: center;
     width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.header,
-h1 {
+.header, h1 {
     font-weight: 100;
     font-size: 2.5rem;
+}
+
+.header, p {
+    display: inline;
+    font-size: 12px;
 }
 
 .todo-list {
     width: 100%;
     height: 400px;
-    background-color: #d0ab69;
+    background-color: #00ff00;
 }
 
 .todo-input {
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     width: 300px;
 }
@@ -56,6 +63,7 @@ input {
     border: 0;
     padding-left: 10px;
     font-size: 18px;
+    font-family: 'Inter', sans-serif;
 }
 
 .add-task {
@@ -89,10 +97,22 @@ ul {
 
 .fa-square-check{
     padding: 10px;
+    transition-property: color;
+    transition-duration: .2s;
+}
+
+.fa-square-check:hover{
+    color: green;
 }
 
 .fa-trash-can {
     padding: 10px;
     padding-right: 15px;
     float: right;
+    transition-property: color;
+    transition-duration: .2s;
+}
+
+.fa-trash-can:hover{
+    color: red;
 }
