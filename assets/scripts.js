@@ -43,19 +43,17 @@ function addTask() {
   taskInput.value = "";
 };
 
-
 //Deletes task
 function removeTask() {
   this.parentElement.remove();
 };
 
-//Toggles cross through text decoration
+//Toggles cross-through text decoration
 function complete() {
   this.parentElement.classList.toggle("complete");
 };
 
-
-//Code from stackoverflow. Noted in Read Me.
+//Code from stackoverflow and modified for UK format. Noted in Read Me.
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0');
