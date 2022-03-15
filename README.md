@@ -2,7 +2,7 @@
 
 A simple digital to-do list that allows a user to input tasks then check them off as they are completed, or delete them if no longer relevant. 
 
-View live site [here](xx).
+View live site [here](https://jdj0.github.io/milestone2-todo/).
 
 # UX
 
@@ -111,7 +111,7 @@ For a detailed step-by-step guide with screenshots, click [here](https://docs.gi
 # Credits
 ## Code
 - StackOverflow
-The code for the date was taken from a post on stack overflow and was modified to a UK format. The source can be found [here](https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript).
+The code for the date was taken from a post on stack overflow but was modified to a UK format. The source can be found [here](https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript).
 ## Content
 - All content written by Joshua Jones (Developer).
 - The  example Code Institute Read Me file, on which this Read Me file is based on.
