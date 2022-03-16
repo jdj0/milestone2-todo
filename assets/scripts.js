@@ -47,7 +47,10 @@ function addTask() {
 
 //Deletes task
 function removeTask() {
-  this.parentElement.remove();
+  let popUp = confirm("Do you want to delete this task?");
+    if(popUp){
+      this.parentElement.remove();
+  }
 }
 
 //Toggles cross-through text decoration
