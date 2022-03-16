@@ -63,7 +63,15 @@ The HTML, CSS and JavaScript were put through validators and passed through with
 
 ## Testing User Stories
 - "As a user of the application, I want to be able to input tasks that I want to get done that day. I want to be able to check off each task as I accomplish them. I want the option of deleting tasks that are no longer relevant."
-    -  A user of the application is greeted with a clear, clutter free interface that is clearly titled as a to-do list. The input at the bottom of the application is auto-focussed and has placeholder text that asks the user to “Add tasks here”. The add icon next to the input changes colour when hovered over to let the user know it is a button to be clicked. Once the task is added to the list, the user is presented with intuitive icons that provide the functionality of completing or deleting the task. The application will alert the user if they try and add a task without adding text to the input. The user will see a confirmation message pop up when they try to delete a task. The input is limited to a max of 30 characters in order to preserve the formatting of the application. 
+    -  A user of the application is greeted with a clear, clutter free interface that is clearly titled as a to-do list. The input at the bottom of the application is auto-focussed and has placeholder text that asks the user to “Add tasks here”. The add icon next to the input changes colour when hovered over to let the user know it is a button to be clicked:\
+    ![task-input](assets/images/task-input.png)\
+    Once the task is added to the list, the user is presented with intuitive icons that provide the functionality of completing or deleting the task:\
+    ![task](assets/images/task.png)\
+     The application will alert the user if they try and add a task without adding text to the input:\
+    ![empty input](assets/images/input-empty.png)\
+     The user will see a confirmation message pop up when they try to delete a task:\
+    ![delete pop up](assets/images/delete-pop-up.png)\
+    The input is limited to a max of 30 characters in order to preserve the formatting of the application. 
 
 ## Further Testing
 - Browsers
