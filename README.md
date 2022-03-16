@@ -1,4 +1,6 @@
-![Mock ups](xx)
+<h1 align="center">To-Do List</h1>
+
+![Mock ups](assets/images/mocks.png)
 
 A simple digital to-do list that allows a user to input tasks then check them off as they are completed, or delete them if no longer relevant. 
 
@@ -34,7 +36,7 @@ View live site [here](https://jdj0.github.io/milestone2-todo/).
 ## Languages used
  - HTML5
  - CSS3
- - JavaScript
+ - JavaScript ES6
 
  ## Frameworks, Libraries & Programmes used:
 1.	Google Fonts
@@ -60,8 +62,8 @@ The HTML, CSS and JavaScript were put through validators and passed through with
 ![lighthouse](assets/images/g-lighthouse.jpg)
 
 ## Testing User Stories
-- As a user of the application, I want to be able to input tasks that I want to get done that day. I want to be able to check off each task as I accomplish them. I want the option of deleting tasks that are no longer relevant.
-    -  A user of the application is greeted with a clear, clutter free interface that is clearly titled as a to-do list. The input at the bottom of the application is auto-focussed and has placeholder text that asks the user to “Add tasks here”. The add icon next to the input changes colour when hovered over to let the user know it is a button to be clicked. Once the task is added to the list, the user is presented with intuitive icons that provide the functionality of completing to deleting the task. The application will alert the user if they try and add a task without adding text to the input. The input is limited to a max of 30 character in order to preserve the formatting of the application. 
+- "As a user of the application, I want to be able to input tasks that I want to get done that day. I want to be able to check off each task as I accomplish them. I want the option of deleting tasks that are no longer relevant."
+    -  A user of the application is greeted with a clear, clutter free interface that is clearly titled as a to-do list. The input at the bottom of the application is auto-focussed and has placeholder text that asks the user to “Add tasks here”. The add icon next to the input changes colour when hovered over to let the user know it is a button to be clicked. Once the task is added to the list, the user is presented with intuitive icons that provide the functionality of completing or deleting the task. The application will alert the user if they try and add a task without adding text to the input. The input is limited to a max of 30 characters in order to preserve the formatting of the application. 
 
 ## Further Testing
 - Browsers
@@ -73,10 +75,18 @@ The HTML, CSS and JavaScript were put through validators and passed through with
      - MacBook Pro 13inch: Displays and acts as intended.
      - iPhone 13 Pro: Displays and acts as intended.
      - iPad Pro: Displays and acts as intended.
-      - OnePlus Nord: Displays and acts as intended.
+    - OnePlus Nord: Displays and acts as intended.
      - Huawei Mateview display: Displays and acts as intended. 
  - Real World Testing
-     - Friends and family members used the application to 'offload' tasks that they wished to get done. This was 
+     - Friends and family members used the application to mentally 'offload' tasks that they wished to get done. This preliminery testing was successful, but did highlight an issue on mobile devices that used safari as a browser, where the search bar being at the bottom of the page covered part of the input. This bug has since been fixed and is documented below.
+
+## Bug and Fixes
+- Mobile safari browsers have the search bar at the bottom of the window. This caused part of the input to be covered.
+    - Fix: changing the height of the application on mobile devices to "90vh".
+- It was possible to input empty tasks to the task list.
+    - Fix: Adding an “if” statement that alerts the user if they have tried adding an empty task to the task list.
+- It was possible to type in a task so long that it would run off the task list div.
+    - Fix: Added a limit of 30 characters to the task input.
 
 # Next Steps
 - Add a local storage feature so that the user can leave the webpage and return later to find the same tasks.
@@ -95,7 +105,7 @@ To deploy the site through GitHub pages:
 
 ## Forking the GitHub Repository
 To create a copy of the project to experiment with changes in a safe way that will not affect the original site:
-1.	Log into GitHub go to the GitHub Repository.
+1.	Log into GitHub. Go to the GitHub Repository.
 2.	Near the top of the Repository, click the “Fork” button in order to create a copy of the repository. 
 
 ## Making a Local Clone
@@ -110,7 +120,7 @@ For a detailed step-by-step guide with screenshots, click [here](https://docs.gi
 
 # Credits
 ## Code
-- StackOverflow
+- StackOverflow:
 The code for the date was taken from a post on stack overflow but was modified to a UK format. The source can be found [here](https://stackoverflow.com/questions/1531093/how-do-i-get-the-current-date-in-javascript).
 ## Content
 - All content written by Joshua Jones (Developer).

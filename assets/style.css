@@ -133,7 +133,7 @@ ul {
 
 @media (max-width: 415px){
     .container{
-        height: 600px;
+        height: 90vh;
         width: 320px;
         margin-top: 10px;
     }
@@ -143,11 +143,11 @@ ul {
     }
 
     .todo-list{
-        height: 425px;
+        height: 800px;
     }
 }
 
-@media (min-width: 1400px){
+@media (min-width: 1599px){
     .container{
         height: 900px;
         width: 750px;
